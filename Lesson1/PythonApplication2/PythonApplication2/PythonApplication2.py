@@ -5,7 +5,6 @@ key = "0x";
 
 bitNum = input("Enter size of key in bites : ");
 keys=2**int(bitNum);
-print(15**int(bitNum));
 print(keys);
 for j in range (int(bitNum)):
     i = random.randint(0, 15);
