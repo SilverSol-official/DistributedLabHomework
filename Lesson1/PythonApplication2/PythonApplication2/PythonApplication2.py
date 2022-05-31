@@ -2,9 +2,38 @@ import random;
 import time;
 
 key = "0x";
+flag=False;
+while flag == False :
+              bitNum = input("Enter size of key in bites : ")
+              if bitNum=="16":
+                  flag = True;
+              
+              if bitNum=="32":
+                  flag = True;
+               
+              if bitNum=="64":
+                  flag = True;
+                    
+              if bitNum=="128":
+                  flag = True;
+                       
+              if bitNum=="256":
+                  flag = True;
+                           
+              if bitNum=="512":
+                  flag = True;
+                               
+              if bitNum=="1024":
+                  flag = True;
+                                   
+              if bitNum=="2048":
+                  flag = True;
+                                       
+              if bitNum=="4096":
+                  flag = True;
 
-bitNum = input("Enter size of key in bites : ");
 keys=2**int(bitNum);
+
 print(keys);
 for j in range (int(bitNum)):
     i = random.randint(0, 15);
